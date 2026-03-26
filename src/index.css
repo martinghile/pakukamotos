@@ -1,6 +1,6 @@
-@import "tailwindcss";
-@import "tw-animate-css";
-@plugin "@tailwindcss/typography";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @custom-variant dark (&:is(.dark *));
 
@@ -67,11 +67,11 @@
 }
 
 :root {
-  --button-outline: rgba(0,0,0, .10);
-  --badge-outline: rgba(0,0,0, .05);
+  --button-outline: rgba(0, 0, 0, .10);
+  --badge-outline: rgba(0, 0, 0, .05);
   --opaque-button-border-intensity: -8;
-  --elevate-1: rgba(0,0,0, .03);
-  --elevate-2: rgba(0,0,0, .08);
+  --elevate-1: rgba(0, 0, 0, .03);
+  --elevate-2: rgba(0, 0, 0, .08);
 
   --background: 0 0% 6%;
   --foreground: 0 0% 98%;
@@ -122,14 +122,14 @@
   --app-font-mono: Menlo, monospace;
   --radius: .5rem;
 
-  --shadow-2xs: 0px 2px 0px 0px rgba(0,0,0,0.4);
-  --shadow-xs: 0px 2px 4px 0px rgba(0,0,0,0.4);
-  --shadow-sm: 0px 2px 4px 0px rgba(0,0,0,0.4), 0px 1px 2px -1px rgba(0,0,0,0.3);
-  --shadow: 0px 4px 8px 0px rgba(0,0,0,0.4), 0px 2px 4px -1px rgba(0,0,0,0.3);
-  --shadow-md: 0px 6px 12px 0px rgba(0,0,0,0.4), 0px 2px 4px -1px rgba(0,0,0,0.3);
-  --shadow-lg: 0px 8px 16px 0px rgba(0,0,0,0.4), 0px 4px 6px -1px rgba(0,0,0,0.3);
-  --shadow-xl: 0px 12px 24px 0px rgba(0,0,0,0.4), 0px 8px 10px -1px rgba(0,0,0,0.3);
-  --shadow-2xl: 0px 16px 32px 0px rgba(0,0,0,0.5);
+  --shadow-2xs: 0px 2px 0px 0px rgba(0, 0, 0, 0.4);
+  --shadow-xs: 0px 2px 4px 0px rgba(0, 0, 0, 0.4);
+  --shadow-sm: 0px 2px 4px 0px rgba(0, 0, 0, 0.4), 0px 1px 2px -1px rgba(0, 0, 0, 0.3);
+  --shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.4), 0px 2px 4px -1px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0px 6px 12px 0px rgba(0, 0, 0, 0.4), 0px 2px 4px -1px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0px 8px 16px 0px rgba(0, 0, 0, 0.4), 0px 4px 6px -1px rgba(0, 0, 0, 0.3);
+  --shadow-xl: 0px 12px 24px 0px rgba(0, 0, 0, 0.4), 0px 8px 10px -1px rgba(0, 0, 0, 0.3);
+  --shadow-2xl: 0px 16px 32px 0px rgba(0, 0, 0, 0.5);
 
   --tracking-normal: 0em;
   --spacing: 0.25rem;
@@ -165,6 +165,7 @@
   }
 
   .no-default-hover-elevate {}
+
   .no-default-active-elevate {}
 
   .toggle-elevate::before,
