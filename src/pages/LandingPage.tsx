@@ -320,13 +320,42 @@ export default function LandingPage() {
 
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
               {[
-                { icon: "🏍️", title: "20+ anos" },
-                { icon: "📦", title: "Variedade" },
-                { icon: "👨‍🔧", title: "Equipe treinada" },
-                { icon: "❤️", title: "Foco nas pessoas" },
+                {
+                  icon: (
+                    <svg className="w-6 h-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6l4 2m6-2a10 10 0 11-20 0 10 10 0 0120 0z" />
+                    </svg>
+                  ),
+                  title: "20+ anos",
+                },
+                {
+                  icon: (
+                    <svg className="w-6 h-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M3 7h18M5 7v13h14V7M9 7V5h6v2" />
+                    </svg>
+                  ),
+                  title: "Variedade",
+                },
+                {
+                  icon: (
+                    <svg className="w-6 h-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M12 14l9-5-9-5-9 5 9 5z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M12 14v7" />
+                    </svg>
+                  ),
+                  title: "Equipe treinada",
+                },
+                {
+                  icon: (
+                    <svg className="w-6 h-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4 12c2-4 6-6 8-6s6 2 8 6c-2 4-6 6-8 6s-6-2-8-6z" />
+                    </svg>
+                  ),
+                  title: "Foco nas pessoas",
+                },
               ].map((item) => (
                 <div key={item.title} className="flex flex-col items-center gap-2 bg-white/5 border border-white/10 rounded-lg p-3 text-center">
-                  <span className="text-xl">{item.icon}</span>
+                  <div className="mb-1">{item.icon}</div>
                   <span className="text-xs text-gray-300 font-medium">{item.title}</span>
                 </div>
               ))}
