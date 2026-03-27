@@ -347,8 +347,18 @@ export default function LandingPage() {
                 },
                 {
                   icon: (
-                    <svg className="w-6 h-6 text-red-500" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M12 12c2.76 0 5-2.69 5-6s-2.24-6-5-6-5 2.69-5 6 2.24 6 5 6zm0 2c-3.87 0-7 3.13-7 7h14c0-3.87-3.13-7-7-7z" />
+                    <svg
+                      className="w-6 h-6 text-red-500"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={1.8}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M15 11a3 3 0 100-6 3 3 0 000 6zM9 11a3 3 0 100-6 3 3 0 000 6zM2 20c0-3 3-5 7-5s7 2 7 5M15 15c4 0 7 2 7 5"
+                      />
                     </svg>
                   ),
                   title: "Foco nas pessoas",
