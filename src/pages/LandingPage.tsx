@@ -296,22 +296,28 @@ export default function LandingPage() {
             backgroundPosition: "center",
           }}
         />
-        <div className="absolute inset-0 bg-black/82" />
+
+        {/* */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/95 via-black/80 to-black/95" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-4">
           <div className="max-w-2xl">
             <h2 className="text-3xl font-black uppercase mb-2">
               SOBRE A <span className="text-red-500">PAKUKA</span>
             </h2>
+
             <p className="text-red-400 font-semibold italic text-lg mb-5">
               "Não é sobre motos. É sobre pessoas."
             </p>
+
             <p className="text-gray-200 leading-relaxed mb-4">
               Com mais de <strong className="text-white">20 anos de experiência</strong>, a Pakuka é referência em peças, acessórios e serviços para motocicletas em Campinas e região. Nossa jornada foi construída na base da confiança e do relacionamento humano.
             </p>
+
             <p className="text-gray-400 leading-relaxed mb-6">
               Nossa equipe é formada por profissionais devidamente treinados, capacitados e focados em trazer a melhor experiência aos clientes. Acreditamos que por trás de cada moto existe uma pessoa com sonhos, metas e histórias — e é essa pessoa que nos move todos os dias.
             </p>
+
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
               {[
                 { icon: "🏍️", title: "20+ anos" },
@@ -325,6 +331,7 @@ export default function LandingPage() {
                 </div>
               ))}
             </div>
+
           </div>
         </div>
       </section>
