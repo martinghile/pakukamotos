@@ -347,12 +347,12 @@ export default function LandingPage() {
                 },
                 {
                   icon: (
-                    <svg className="w-6 h-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M17 20h5v-1a4 4 0 00-3-3.87M9 20H4v-1a4 4 0 013-3.87m10-5a4 4 0 11-8 0 4 4 0 018 0zm6 4v1a4 4 0 01-3 3.87M6 10a4 4 0 108 0 4 4 0 00-8 0z" />
+                    <svg className="w-6 h-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M16 11c1.657 0 3-1.567 3-3.5S17.657 4 16 4s-3 1.567-3 3.5S14.343 11 16 11zM8 11c1.657 0 3-1.567 3-3.5S9.657 4 8 4 5 5.567 5 7.5 6.343 11 8 11zm0 2c-2.67 0-8 1.34-8 4v1h10v-1c0-2.66-5.33-4-8-4zm8 0c-.29 0-.62.02-.97.05 1.19.84 1.97 1.94 1.97 3.45v1h6v-1c0-2.66-5.33-4-7-4z" />
                     </svg>
                   ),
                   title: "Foco nas pessoas",
-                },
+                }
               ].map((item) => (
                 <div key={item.title} className="flex flex-col items-center gap-2 bg-white/5 border border-white/10 rounded-lg p-3 text-center">
                   <div className="mb-1">{item.icon}</div>
